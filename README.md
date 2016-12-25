@@ -18,9 +18,10 @@ https://www.mathworks.com/matlabcentral/fileexchange/46339-blockedfwrite
 
 After installing these programs and adding each to the Matlab path. Be sure to correct the path definitions in cudaica.m
 
-To execute AR2 please use the EEG data available at https://zenodo.org/record/221095#.WGBIj7YrLdQ stored in European Data Format.
+To execute AR2 please use the EEG data available at https://zenodo.org/record/221095#.WGBIj7YrLdQ stored in European Data Format (EDF)
+as the input file.
 
+[eeg] = cudaica_scalp_v4('input_eeg.edf',input_matrix,'ar2_eeg.edf');
 
-
-
+The code can easily be adapted for EDF files exported from EEG equipment manufacturers such as Nihon Kohden.
 
