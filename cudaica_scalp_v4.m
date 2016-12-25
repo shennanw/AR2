@@ -1,9 +1,10 @@
-% Main DSP Algorithm for live HFO detector
+% Main DSP Algorithm for AR2 Scalp EEG artifact reduction
 function [eeg] = cudaica_scalp_v4(eeg,input_matrix,outfile);
 [header, signalHeader, signalCell] = blockEdfLoad(eeg)
 eeg=[];
 badchannels=[];
 numchan=18;
+%% This code can be utilized for importing EEG files from the Nihon Kohden (TM) EEG-1200 system
 if numel(signalCell) == 41
     fprintf('41 channel file');
     numchan=41;
@@ -35,6 +36,7 @@ else
     end;
 end;
 end;
+% This loop needs to be modified for EEG recordings from other manufacturers.
 for i=1:18
     eeg.eeg_data(i,:)=signalCell{1,i};
     eeg.chanlist{i}=signalHeader(i).signal_labels
@@ -53,6 +55,7 @@ noiseincluded = filter(b,a,noiseincluded);
 data(i,:)=noiseincluded;
 end;
 pre_outfile=strcat('pre_',outfile);
+% Also can be utilized for EEG files from NK or other manufacturers.
 %for i=1:numchan
 %    signalHeader(i).signal_labels=signalHeader_correctlabels(i).signal_labels;
 %end;
