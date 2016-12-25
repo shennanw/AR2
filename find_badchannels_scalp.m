@@ -1,9 +1,9 @@
 function [MI,badchannel_index,badchannels]=find_badchannels(eeg,input_matrix);
-loadmatrix=input_matrix;
+load(input_matrix);
 %Truncate the recordings
  
 %First Read in the Matrix of EEGs
-channelinfo = matrixreader(loadmatrix);
+channelinfo = matrixreader(input_matrix);
 matrixsize = length(channelinfo.names);
 %Find Channels
 numberfoundchannels = 0;
