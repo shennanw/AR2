@@ -21,7 +21,9 @@ After installing these programs and adding each to the Matlab path. Be sure to c
 To execute AR2 please use the EEG data available at https://zenodo.org/record/221095#.WGBIj7YrLdQ stored in European Data Format (EDF)
 as the input file.
 
-[eeg] = cudaica_scalp_v4('input_eeg.edf',input_matrix,'ar2_eeg.edf');
+[eeg] = cudaica_scalp_v4('input_eeg.edf','scalp_input_matrix.mat','ar2_eeg.edf');
 
-The code can easily be adapted for EDF files exported from EEG equipment manufacturers such as Nihon Kohden.
+The original and AR2 processed EDF files can be inspected using most EDF viewers or Persyst (TM).
+
+The code can easily be adapted for EDF files exported from EEG equipment manufacturers such as Nihon Kohden (TM).
 
