@@ -18,6 +18,7 @@ https://www.mathworks.com/matlabcentral/fileexchange/46339-blockedfwrite
 
 After installing these programs and adding each to the Matlab path. Be sure to correct the path definitions in cudaica.m
 
+To execute AR2 please use the EEG data available at https://zenodo.org/record/221095#.WGBIj7YrLdQ stored in European Data Format.
 
 
 
