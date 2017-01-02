@@ -1,4 +1,4 @@
-% Main DSP Algorithm for AR2 Scalp EEG artifact reduction
+% Main DSP Algorithm for AR2 Scalp EEG artifact reduction for use with test data provided on Zenmodo
 function [eeg] = cudaica_scalp_v4(eeg,input_matrix,outfile);
 [header, signalHeader, signalCell] = blockEdfLoad(eeg)
 eeg=[];
