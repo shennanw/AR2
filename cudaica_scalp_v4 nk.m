@@ -1,4 +1,4 @@
-% Main DSP Algorithm for live HFO detector
+% AR2 for importing scalp EEG files from Nihon Kohden Neuroworkbench (TM)
 function [eeg] = cudaica_scalp_v4(eeg,input_matrix,outfile);
 [header, signalHeader, signalCell] = blockEdfLoad(eeg)
 eeg=[]
