@@ -54,3 +54,4 @@ setdiff_bc.m: EEGlab function:
 signalHeader_correctlabels_39.mat: stored data file for NK scalp EEG data import and export
 signalHeader_correctlabels_41.mat: stored data file for NK scalp EEG data import and export
 signalHeader_correctlabels_43.mat: stored data file for NK scalp EEG data import and export
+
