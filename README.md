@@ -28,11 +28,11 @@ The original and AR2 processed EDF files can be inspected using most EDF viewers
 The code can easily be adapted for EDF files exported from EEG equipment manufacturers such as Nihon Kohden (TM).
 
 File Inventory
-1) cudaica_matlab_scalp_v2.m:
-2) cudaica_scalp_v4 nk.m
-3) cudaica_scalp_v4.m
-4) cudaica_trialfun.m
-5) cudaicascalp.m
+1) cudaica_matlab_scalp_v2.m: Calls CUDAICA and performs AR2 calculations
+2) cudaica_scalp_v4 nk.m: AR2 main function for importing NK scalp EEG data
+3) cudaica_scalp_v4.m: AR2 main function for importing Zenmodo scalp EEG data
+4) cudaica_trialfun.m: module for abnormal impedance detection (requires field trip)
+5) cudaicascalp.m: Calls CUDAICA and performs AR2 calculations
 6) eeg_checkset.m: EEGlab function
 7) eeg_filter.m: 500th order FIR symmetric filter
 8) eeg_getdatact.m: EEGlab function
