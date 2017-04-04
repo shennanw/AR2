@@ -27,3 +27,30 @@ The original and AR2 processed EDF files can be inspected using most EDF viewers
 
 The code can easily be adapted for EDF files exported from EEG equipment manufacturers such as Nihon Kohden (TM).
 
+File Inventory
+cudaica_matlab_scalp_v2.m:
+cudaica_scalp_v4 nk.m
+cudaica_scalp_v4.m
+cudaica_trialfun.m
+cudaicascalp.m
+eeg_checkset.m: EEGlab function
+eeg_filter.m: 500th order FIR symmetric filter
+eeg_getdatact.m: EEGlab function
+find_badchannels_scalp.m
+finputcheck.m: EEGlab function
+floatread.m: EEGlab function
+floatwrite.m: EEGlab function
+histogram2.m: module for abnormal impedance detection
+information.m: module for abnormal impedance detection
+loadmodout12.m: EEGlab function
+matrixreader.m: function for channel directory import 
+mutualinformation_norm_strehl_ghosh1.m: module for abnormal impedance detection
+pop_editset.m: EEGlab function
+pop_importdata.m: EEGlab function
+pop_subcomp.m: EEGlab function
+scalp_input_matrix.mat: Channel directory for example data (Zenmodo) import. Cell Array
+scalp_input_matrix_nk.mat: Channel directory for NK scalp EEG data import. Cell Array
+setdiff_bc.m: EEGlab function: 
+signalHeader_correctlabels_39.mat: stored data file for NK scalp EEG data import and export
+signalHeader_correctlabels_41.mat: stored data file for NK scalp EEG data import and export
+signalHeader_correctlabels_43.mat: stored data file for NK scalp EEG data import and export
